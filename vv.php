@@ -5,14 +5,14 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("blue","  [♥]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC \n");
 echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA 62xxxxxxxxxx \n");
-echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Bananacreamy \n");
+echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @xxxxx \n");
 echo color("yellow","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
 echo color("blue"," [♡] MAKLUM LAH NAMANYA JUGA SC GRATISAN \n");
 echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n");
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 	echo "\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[93mLO PUNYA AKUN BUAT LOGIN ?: ";	
+echo "\e[93mHAYO , MAU NGOPIK YA ?: ";	
        $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "punya")
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -27,7 +27,7 @@ if($user == "y")
 {
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[93mNAMA LO SIAPA CUK ?: ";
+	echo "\e[93mTULIS 1 NAMA HEWAN ATAU KATA KOTOR ?: ";
 	$input = trim(fgets(STDIN));
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 		goto ulang;
@@ -39,19 +39,19 @@ else
 		echo "\e[92m[🚫]        \e[91mMAMPOS GA PUNYA AKUNNYA 😆    \e[92m [🚫]\n";
 	        echo "\e[92m[🚫]              \e[91m⚠️ WARNING ⚠️           \e[92m [🚫]\n";
 		echo "\e[92m[🚫]           \e[91mSEGERA MINTA IZIN          \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@BANANACREAMY     \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@XXXXXXXXXX       \e[92m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
-echo "\e[92m             (HALLO MAS $input A.K.A NAK HARAM)               \n";
+echo "\e[92m             ( OKE AKU ADALAH $input )               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("yellow","📲▶️ NOMOR LO CUK : ");
+        echo color("yellow","📲▶️ NOMOR COY : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -78,7 +78,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("yellow","📶▶️ KODE OTP UDAH GUA KIRIM CUK")."\n";
+        echo color("yellow","📶▶️ KODE OTP COY")."\n";
         otp:
         echo color("red","💬▶️ Otp : ");
         $otp = trim(fgets(STDIN));
@@ -90,8 +90,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO CLAIM KAYANYA CUK🎫▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("red","🔐▶️ INI VOC BELANJA");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫 SAATNYA CLAIM 🎫▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("red","🔐▶️ INI VOC BELANJA COY");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("green",".");
@@ -105,7 +105,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	gocar:
-        echo "\n".color("yellow","🔐▶️ INI VOC 15.10.5 CUK ");
+        echo "\n".color("yellow","🔐▶️ INI FOOD 15.10.5 COY ");
         echo "\n".color("green","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -119,7 +119,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("yellow","🔐▶️ INI VOC GOSEND CUK");
+        echo "\n".color("yellow","🔐▶️ INI VOC GOSEND COY");
         echo "\n".color("green","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("blue",".");
@@ -128,7 +128,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHNGIRIM"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("red","🔓▶️ Message: ".$message);
-        echo "\n".color("yellow","🔐▶️ INI VOC REFRESH FOOD CUK");
+        echo "\n".color("yellow","🔐▶️ INI VOC REFRESH FOOD COY");
         echo "\n".color("green","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
@@ -208,12 +208,12 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN CUK BIAR AMAN !!!: y/n ");
+         echo "\n".color("purple","🔧▶️ SET PIN COY BIAR AMAN !!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 666123 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"666123"}';
+         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 010101 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"010101"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
@@ -227,15 +227,15 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          }
          }
          }else{
-         echo color("red","-] OTPNYA YANG BENER NYET");
+         echo color("red","-] OTPNYA YANG BENER COY ");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] INPUT ULANG YANG BENER YE\n");
-         goto otp;
+         echo color("yellow","!] INPUT ULANG YANG BENER COY \n");
+         goto ulang;
          }
          }else{
-         echo color("red","-] NOMOR LO GA FRESH KAMPRET");
+         echo color("red","-] NOMORNYA UDAH TERDAFTAR ATAU SALAH NIH ");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] MASUKAN YG FRESH PEPEQ\n");
+         echo color("yellow","!] MASUKAN NOMOR YANG BARU\n");
          goto ulang;
          }
 //  }
